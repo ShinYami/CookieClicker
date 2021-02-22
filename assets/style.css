@@ -8,7 +8,10 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Orbitron', sans-serif;
-    background-color: ;
+    background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 h1 {
@@ -38,7 +41,7 @@ h2 {
 }
 
 .virus img {
-    max-width:40%;
+    max-width:30%;
     height:auto;
 }
 
@@ -48,6 +51,23 @@ button {
     padding: 1rem;
     border: none;
     cursor: pointer;
+    background: none;
+}
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 200px;
+}
+
+.shop button {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    border: black 1px solid;
+    font-size: 1rem;
+    padding: 30px;
+    margin: 10px;
 }
 
 .start {
@@ -69,6 +89,7 @@ button {
     -webkit-animation: rotation 5s infinite linear;
     cursor: pointer;
 }
+
 
 @-webkit-keyframes rotation {
     from {
