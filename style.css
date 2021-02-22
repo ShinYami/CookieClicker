@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.virus {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.virus img {
+    max-width:40%;
+    height:auto;
+}
+
+button {
+    border-radius: 10px;
+    color: black;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.start {
+    display: flex;
+}
+
+#start {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#virus {
+    -webkit-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
