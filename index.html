@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Virus Dev</title>
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="./assets/img/biohazard.png"/>
-    <link rel="stylesheet" href="./assets/style.css" />
-    
-  </head>
-  <body>
-    <h1>Virus Developer</h1>
-    <h2>Infect them all !</h2>
-    <div class="score">
-      <p>Score :</p>
-      <p id="score">0000</p>
-      <button type="button" onClick="increaseCurrentPlayerScore()">buttonTEST</button>
-    </div>
-    <div class="virusImg">
-      <img class="icone" src="./assets/img/virus.png" id="virus" />
-      <div class="shop">
-        <h2>Shop</h2>
-        <button class="btn" id="">Sneezing</button>
-        <button class="btn" id="">Transportation</button>
-        <button class="btn" id="">Schools</button>
-        <button class="btn" id="">BBQ</button>
-        <button class="btn" id="">Home</button>
-      </div>
-    </div>
-    <div class="start">
-      <button class="btn" id="start">START</button>
-    </div>
-    <script src="./assets/script.js"></script>
-    <script src="./assets/bg.js"></script>
-  </body>
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Virus Dev</title>
+   <link
+     rel="shortcut icon"
+     type="image/png"
+     href="./assets/img/biohazard.png"
+   />
+   <link rel="stylesheet" href="./assets/style.css" />
+   <script src="./assets/script.js"></script>
+   <script src="./assets/bg.js"></script>
+ </head>
+ <body>
+   <h1>Virus Developer</h1>
+   <h2>Infect them all !</h2>
+   <div class="scoreTag">
+     <p>Score :</p>
+     <p id="score">0000</p>
+   </div>
+   <div class="container">
+     <span class="icone">
+       <img onClick="increaseCurrentPlayerScore()" src="./assets/img/virus.png" id="virus" />
+     </span>
+     <div class="shop">
+       <h2>Shop</h2>
+       <button class="btn" id="autoClick" onclick="autoClicker()">
+         <a>Sneezing</a>
+         <p>
+           Price :<span id="cost">0000</span> Owned:<span id="owned"></span>0
+         </p>
+       </button>
+       <button class="btn" id="">
+         <a>Transportation</a>
+         <p>
+           Price :<span id="cost">0000</span> Owned:<span id="owned"></span>0
+         </p>
+       </button>
+       <button class="btn" id="">
+         <a>Schools</a>
+         <p>
+           Price :<span id="cost">0000</span> Owned:<span id="owned"></span>0
+         </p>
+       </button>
+       <button class="btn" id="">
+         <a>BBQ</a>
+         <p>
+           Price :<span id="cost">0000</span> Owned:<span id="owned"></span>0
+         </p>
+       </button>
+       <button class="btn" id="">
+         <a>Home</a>
+         <p>
+           Price :<span id="cost">0000</span> Owned:<span id="owned"></span>0
+         </p>
+       </button>
+     </div>
+   </div>
+   <div class="start">
+     <button class="btn" id="start">START</button>
+   </div>
+ </body>
 </html>
