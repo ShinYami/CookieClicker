@@ -33,14 +33,14 @@ h2 {
     padding-left: 10px;
 }
 
-.virus {
+.virusImg {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.virus img {
+.virusImg img {
     max-width:30%;
     height:auto;
 }
@@ -83,6 +83,11 @@ button {
     font-weight: bold;
     border: black 1px solid;
     font-size: 1rem;
+    transition: 0.3s;
+}
+
+#start:hover {
+    background: #27ae60;
 }
 
 #virus {
@@ -97,5 +102,18 @@ button {
     }
     to {
             -webkit-transform: rotate(359deg);
+    }
+}
+
+.virus {
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s linear;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
     }
 }
