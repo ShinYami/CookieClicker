@@ -15,3 +15,10 @@ function createVirus () {
 }
 
 setInterval(createVirus, 500);
+
+let i = 0
+    document.getElementById('virus').addEventListener("click", () => {
+        i++;
+        document.getElementById('score').innerText = i;
+        console.log(i);
+    })
