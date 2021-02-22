@@ -83,19 +83,26 @@ button {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     border: black 1px solid;
-    font-size: 1rem;
+    font-size: 1.3rem;
     transition: 0.3s;
 }
 
 #start:hover {
-    background: #27ae60;
+    background: #55D400;
+    color: white;
+    border: white 1px solid;
 }
+
+
+#virus:hover {
+    transform: scale(1.1);
+  }
 
 #virus {
     -webkit-animation: rotation 5s infinite linear;
+    transition: all .2s ease-in-out; 
     cursor: pointer;
 }
-
 
 @-webkit-keyframes rotation {
     from {
