@@ -31,6 +31,7 @@ h2 {
 
 #score {
     padding-left: 10px;
+    font-weight: bold;
 }
 
 .virusImg {
@@ -82,19 +83,26 @@ button {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     border: black 1px solid;
-    font-size: 1rem;
+    font-size: 1.3rem;
     transition: 0.3s;
 }
 
 #start:hover {
-    background: #27ae60;
+    background: #55D400;
+    color: white;
+    border: white 1px solid;
 }
+
+
+#virus:hover {
+    transform: scale(1.1);
+  }
 
 #virus {
     -webkit-animation: rotation 5s infinite linear;
+    transition: all .2s ease-in-out; 
     cursor: pointer;
 }
-
 
 @-webkit-keyframes rotation {
     from {
@@ -109,7 +117,8 @@ button {
     position: fixed;
     top: -1vh;
     transform: translateY(0);
-    animation: fall 3s linear;
+    animation: fall 3s linear forwards;
+    font-size: 2rem;
 }
 
 @keyframes fall {
