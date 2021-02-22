@@ -31,6 +31,7 @@ h2 {
 
 #score {
     padding-left: 10px;
+    font-weight: bold;
 }
 
 .virusImg {
@@ -109,7 +110,8 @@ button {
     position: fixed;
     top: -1vh;
     transform: translateY(0);
-    animation: fall 3s linear;
+    animation: fall 3s linear forwards;
+    font-size: 2rem;
 }
 
 @keyframes fall {
