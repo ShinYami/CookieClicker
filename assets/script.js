@@ -1,12 +1,17 @@
 
-
+ var clicks = 0;
 function increaseCurrentPlayerScore(){
     // STEP 3 (Daniel)
-    // When you click the button, increase the variable storing the score by 'increment', then display the current score inside the label.
+    // When you click on the image, increase the variable storing the score by 'increment', then display the current score inside the label.
     let currentPlayerScore = localStorage.currentPlayerScore;
     let currentIncrement = localStorage.currentIncrement;
 
+    currentPlayerScore = clicks;
+    clicks += 1;
+    document.getElementById("score").innerHTML = currentPlayerScore;
+
 }
+
 
 function purchaseMultiplier(idMultiplierButton){
     // STEP 5 (Daniel)
@@ -76,11 +81,14 @@ function initLocalStorage(){
 }
 
 
-document.getElementById("start").addEventListener("click", () => {
-    // GLOBAL VARIABLES INITIALISATION
-    if(!localStorage.currentPlayerScore>0){initLocalStorage();}
-
-    // STEP 4 (Stéphane)
-    // Adding other buttons which will act as a multipliers. 
-    // When called these buttons will permanently multiply the number of points per click, by two for example.
-})
+window.onload = function(){
+   
+    document.getElementById("start").addEventListener("click", () =>  {
+        // GLOBAL VARIABLES INITIALISATION
+        if(!localStorage.currentPlayerScore>0){initLocalStorage();}
+    
+        // STEP 4 (Stéphane)
+        // Adding other buttons which will act as a multipliers. 
+        // When called these buttons will permanently multiply the number of points per click, by two for example.
+    })
+}
