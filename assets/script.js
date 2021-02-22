@@ -1,5 +1,5 @@
 
- var clicks = 0;
+ var clicks = 1;
 function increaseCurrentPlayerScore(){
     // STEP 3 (Daniel)
     // When you click on the image, increase the variable storing the score by 'increment', then display the current score inside the label.
@@ -10,19 +10,30 @@ function increaseCurrentPlayerScore(){
     clicks += 1;
     document.getElementById("score").innerHTML = currentPlayerScore;
 
+    //verify all spans to add the value that the player have
+    var span = document.getElementsByTagName("button");
+    for(var i=0; i< span.length; i++){
+        document.getElementById("owned"+i).innerHTML = currentPlayerScore;
+    }
+
 }
 
 
 function purchaseMultiplier(idMultiplierButton){
+
+    let currentPlayerScore = localStorage.currentPlayerScore;
+    let arrayLevelsMultipliers = localStorage.arrayLevelsMultipliers.split(",");
+    let arrayCostsMultipliers = localStorage.arrayCostsMultipliers.split(",");
     // STEP 5 (Daniel)
-    // The multiplier allows you to have a big score quickly, that shouldn't be free, it should be a purchase made with the current player score.
+    // The multiplier allows you to have a big score quickly, that shouldn't be free,
+    // it should be a purchase made with the current player score.
+
+    
     // STEP 6 (Daniel)
     // You can't make credit, meaning that the player cannot have a negative score. Think about updating the score display after a purchase.
     // STEP 12 (Daniel)
     // Make it so that, if the player doesn't have the points to purchase a multiplier, he can't.
-    let currentPlayerScore = localStorage.currentPlayerScore;
-    let arrayLevelsMultipliers = localStorage.arrayLevelsMultipliers.split(",");
-    let arrayCostsMultipliers = localStorage.arrayCostsMultipliers.split(",");
+    
 
 }
 
