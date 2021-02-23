@@ -27,7 +27,7 @@ function purchaseMultiplier(idMultiplierButton){
     // STEP 5 (Daniel)
     // The multiplier allows you to have a big score quickly, that shouldn't be free,
     // it should be a purchase made with the current player score.
-
+    
     
     // STEP 6 (Daniel)
     // You can't make credit, meaning that the player cannot have a negative score. Think about updating the score display after a purchase.
