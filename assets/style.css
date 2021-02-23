@@ -145,7 +145,10 @@ button {
 }
 
 @keyframes fall {
-    to {
-        transform: translateY(105vh);
-    }
+   to {
+       transform: translateY(105vh);
+   }
+}
+.visible{
+   display:none;
 }
