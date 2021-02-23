@@ -15,3 +15,10 @@ function createVirus () {
 }
 
 setInterval(createVirus, 500);
+
+//function autoClicker() {
+    //let auto = localStorage.getItem('autoClicker');
+    //for (let i = 1; i <= auto; i++) {
+        //increaseScore();
+    //}
+//}

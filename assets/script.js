@@ -58,7 +58,9 @@ function purchaseBoost() {
 
 }
 
-function autoClicker() {
+
+
+function autoClicker(){
     // STEP 10 (Loris)
     // Implement a new improvement to buy, the auto-click. As the name might suggest this bonus will automatically add a click to your score each x seconds.
     // STEP 12 (Loris)
@@ -66,6 +68,7 @@ function autoClicker() {
     let currentIncrement = localStorage.currentIncrement;
 
 }
+
 
 function initLocalStorage() {
     localStorage.setItem("currentPlayerScore", 0);
@@ -79,8 +82,7 @@ function initLocalStorage() {
 
 document.getElementById("start").addEventListener("click", () => {
     // GLOBAL VARIABLES INITIALISATION
-    if (!localStorage.currentPlayerScore > 0) { initLocalStorage(); }
-
+    if(!localStorage.currentPlayerScore>0){initLocalStorage();} 
     // STEP 4 (Stéphane)
     // Adding other buttons which will act as a multipliers. 
     // When called these buttons will permanently multiply the number of points per click, by two for example.
@@ -91,3 +93,4 @@ document.getElementById("btn0").addEventListener("click", () => {
     displayMultiplierCounter(0);
 
 })
+
