@@ -140,4 +140,6 @@ button {
        transform: translateY(105vh);
    }
 }
- 
+.visible{
+   display:none;
+}
