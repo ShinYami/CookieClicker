@@ -84,9 +84,3 @@ document.getElementById("start").addEventListener("click", () => {
     // When called these buttons will permanently multiply the number of points per click, by two for example.
 })
 
-document.getElementById("btn0").addEventListener("click", () => {
-
-    displayMultiplierCounter(0);
-
-})
-
