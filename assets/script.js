@@ -8,17 +8,6 @@ function increaseCurrentPlayerScore(){
     
 }
 
-function autoClicker(){
-    // STEP 10 (Loris)
-    // Implement a new improvement to buy, the auto-click. As the name might suggest this bonus will automatically add a click to your score each x seconds.
-    // STEP 12 (Loris)
-    // Make it so that, if the player doesn't have the points to purchase an auto-click, he can't.
-    let currentIncrement = localStorage.currentIncrement;
-}
-
-function updateIncrement(value){
-}
-
 function showTimer(){
     // function which displays boost duration & update increment when boost finished -> See also function purchaseBoost()
     // this boost lasts 30 seconds (bonus duration displayed all along)
