@@ -172,10 +172,7 @@ button {
     border: black 1px solid;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+
 
 #End {
     font-family: 'Orbitron', sans-serif;
@@ -186,4 +183,10 @@ a {
     z-index: 2;
     border-radius: 10px;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+#End:hover {
+    color: white;
 }
