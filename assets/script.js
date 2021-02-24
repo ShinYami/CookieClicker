@@ -15,11 +15,9 @@ function autoClicker(){
     // STEP 12 (Loris)
     // Make it so that, if the player doesn't have the points to purchase an auto-click, he can't.
     let currentIncrement = localStorage.currentIncrement;
-
 }
 
 function updateIncrement(value){
-    
 }
 
 function showTimer(){
@@ -78,10 +76,10 @@ window.onload = function(){
     //initialisation 
     localStorage.remainingTime = 0;
     // initialiser le prix des multipliers
-    let span = document.getElementsByTagName("button");
-    for(let i=0; i<span.length; i++){
+   // let span = document.getElementsByTagName("button");
+    //for(let i=0; i<span.length; i++){
         //document.getElementById("cost"+i).innerHTML = 1;
-    }
+    //}
     
     // clique sur virus on augmente le score de increment [ Daniel]
        
@@ -104,9 +102,11 @@ window.onload = function(){
         // lancer un chrono
         // à la fin du temps, il faut diviser l'incrément par 2
 
+//}
 }
-
 document.getElementById("start").addEventListener("click", ()=> {
     let element = document.getElementById('shop');
     element.classList.remove('visible');
+
 })
+
