@@ -14,7 +14,6 @@ body {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #eef2f3, #8e9eab);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 h1 {
@@ -143,7 +142,6 @@ button {
     transform: translateY(0);
     animation: fall 3s linear forwards;
     font-size: 2rem;
-    z-index: -1;
 }
 
 @keyframes fall {
