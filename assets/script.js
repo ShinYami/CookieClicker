@@ -80,6 +80,9 @@ document.getElementById("start").addEventListener("click", ()=> {
     let element = document.getElementById('shop');
     element.classList.remove('visible');
 
+    let resetVisible = document.getElementById('reset');
+    resetVisible.classList.remove('visible');
+
 
     document.getElementById('virus').addEventListener('click', () => { 
         increaseCurrentPlayerScore();
@@ -116,3 +119,7 @@ document.getElementById('autoClicker').addEventListener('click', () => {
                 ; }, 1000);
         }
 });
+
+document.getElementById('reset').addEventListener('click', ()=> {
+    document.location.reload();
+})
