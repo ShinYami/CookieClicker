@@ -1,3 +1,6 @@
+
+document.getElementById('start').addEventListener('click', ()=> {
+
 function createVirus () {
     const virus = document.createElement('div');
     virus.classList.add("virus");
@@ -15,7 +18,7 @@ function createVirus () {
 }
 
 setInterval(createVirus, 500);
-
+})
 //function autoClicker() {
     //let auto = localStorage.getItem('autoClicker');
     //for (let i = 1; i <= auto; i++) {
