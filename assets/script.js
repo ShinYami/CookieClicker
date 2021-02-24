@@ -1,9 +1,11 @@
-let clicks = 1;
+
 function increaseCurrentPlayerScore(){
-    // STEP 3 (Daniel)
+    // (Daniel)
     // When you click on the image, increase the variable storing the score by 'increment', then display the current score inside the label.
-    clicks += 1;
-    document.getElementById("score").innerHTML = clicks;
+    let currentIncrement = parseInt(document.getElementById("increment").innerHTML);
+    let currentPlayerScore = parseInt(document.getElementById("score").innerHTML);
+    currentPlayerScore +=currentIncrement;
+    document.getElementById("score").innerHTML = currentPlayerScore;
     
 }
 
