@@ -154,11 +154,3 @@ button {
 .visible {
     display: none;
 }
-
-.yes {
-    background: green;
-}
-
-.no {
-    background: red;
-}

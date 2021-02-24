@@ -1,4 +1,3 @@
-
 function increaseCurrentPlayerScore(){
     // (Daniel)
     // When you click on the image, increase the variable storing the score by 'increment', then display the current score inside the label.
@@ -72,41 +71,48 @@ function showTimer(){
          }        
      }
  })
-window.onload = function(){
-    //initialisation 
+ 
+window.onload = function(){ 
     localStorage.remainingTime = 0;
-    // initialiser le prix des multipliers
-   // let span = document.getElementsByTagName("button");
-    //for(let i=0; i<span.length; i++){
-        //document.getElementById("cost"+i).innerHTML = 1;
-    //}
-    
-    // clique sur virus on augmente le score de increment [ Daniel]
-       
-    
-    // clique sur sneezing [ Loris ]
-        // retirer le cout de l'autoclick si cout inférieur score
-        // répéter l'autoclick à l'infini toutes les x secondes
-        // incrémenter le owned
-        // Si temps => pas de crédit = grisé (changer class)
-    
-    // clique sur Transportation/Schools/BBQ/....
-        // retirer le cout de l'autoclick si cout inférieur score
-        // incrémenter le owned
-        // augmenter l'incrément
-
-    // fonction pour mettre à jour l'incrément [ Patricia ]
-
-    // fonction qui déclenche un boost de 200% [ Stéphane ]
-        // doubler l'incrément
-        // lancer un chrono
-        // à la fin du temps, il faut diviser l'incrément par 2
-
-//}
 }
+
 document.getElementById("start").addEventListener("click", ()=> {
     let element = document.getElementById('shop');
     element.classList.remove('visible');
 
+
+    document.getElementById('virus').addEventListener('click', () => { 
+        increaseCurrentPlayerScore();
+    })
 })
 
+
+document.getElementById('autoClicker').addEventListener('click', () => {
+
+        let score = parseInt(document.getElementById('score').innerHTML);
+        let increment = parseInt(document.getElementById('increment').innerHTML);
+        let target = document.getElementById('score');
+        let cost = parseInt(document.getElementById('cost0').innerHTML);
+        let owned = parseInt(document.getElementById('owned0').innerHTML);
+
+        if (score >= cost) {
+            score -= cost;
+            target.innerHTML = score;
+            document.getElementById('owned0').innerHTML = owned + 1;
+
+            cost = cost *2;
+            let bonusIncrement = Math.floor(cost*0.4);
+            document.getElementById('cost0').innerHTML = cost;
+            document.getElementById('increment').innerHTML = increment + bonusIncrement;
+
+            console.log(cost);
+            console.log(bonusIncrement);
+            
+            setInterval(function(){ 
+                score = parseInt(document.getElementById('score').innerHTML);
+                increment = parseInt(document.getElementById('increment').innerHTML);
+                score = score + increment;
+                target.innerHTML = score;
+                ; }, 1000);
+        }
+});
