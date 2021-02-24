@@ -104,11 +104,11 @@ document.getElementById('autoClicker').addEventListener('click', () => {
             document.getElementById('owned0').innerHTML = owned + 1;
 
             cost = cost *2;
-            let bonusIncrement = Math.floor(cost*0.4);
+            let bonusIncrement = Math.floor(cost*0.03);
             document.getElementById('cost0').innerHTML = cost;
             document.getElementById('increment').innerHTML = increment + bonusIncrement;
 
-            console.log(cost);
+            //console.log(cost);
             console.log(bonusIncrement);
             
             setInterval(function(){ 
@@ -122,4 +122,28 @@ document.getElementById('autoClicker').addEventListener('click', () => {
 
 document.getElementById('reset').addEventListener('click', ()=> {
     document.location.reload();
+})
+
+document.getElementById('multiplier').addEventListener('click', () => {
+    
+    let score = parseInt(document.getElementById('score').innerHTML);
+        let increment = parseInt(document.getElementById('increment').innerHTML);
+        let target = document.getElementById('score');
+        let cost = parseInt(document.getElementById('cost1').innerHTML);
+        let owned = parseInt(document.getElementById('owned1').innerHTML);
+
+        if (score >= cost) {
+            score -= cost;
+            target.innerHTML = score;
+            document.getElementById('owned1').innerHTML = owned + 1;
+
+            cost = cost *2;
+            let bonusIncrement = Math.floor(cost*0.05);
+            document.getElementById('cost1').innerHTML = cost;
+            document.getElementById('increment').innerHTML = increment + bonusIncrement;
+
+            console.log(cost);
+            console.log(bonusIncrement);
+            
+        }
 })
