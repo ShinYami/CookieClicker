@@ -135,9 +135,7 @@ button {
     -ms-user-select: none;
 }
 
-#virus:hover {
-    transform: scale(1.1);
-}
+
 
 @-webkit-keyframes rotation {
     from {
