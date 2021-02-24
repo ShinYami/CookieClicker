@@ -167,3 +167,23 @@ button {
 .visible {
     display: none;
 }
+
+#reset {
+    border: black 1px solid;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#End {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    border: black 1px solid;
+    font-size: 1rem;
+    margin: 5px;
+    z-index: 2;
+    border-radius: 10px;
+    cursor: pointer;
+}

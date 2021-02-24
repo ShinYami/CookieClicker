@@ -115,7 +115,7 @@ document.getElementById('reset').addEventListener('click', ()=> {
 
 document.getElementById('multiplier').addEventListener('click', () => {
     
-    let score = parseInt(document.getElementById('score').innerHTML);
+        let score = parseInt(document.getElementById('score').innerHTML);
         let increment = parseInt(document.getElementById('increment').innerHTML);
         let target = document.getElementById('score');
         let cost = parseInt(document.getElementById('cost1').innerHTML);
@@ -135,4 +135,14 @@ document.getElementById('multiplier').addEventListener('click', () => {
             console.log(bonusIncrement);
             
         }
+})
+
+document.getElementById('End').addEventListener('click', () => {
+    
+    let source = document.getElementById('End'); 
+    let score = parseInt(document.getElementById('score').innerHTML);
+    let cost = parseInt(document.getElementById('cost4').innerHTML);
+    if (score >= cost) {
+        source.setAttribute("href", "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    } 
 })
