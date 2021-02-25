@@ -37,4 +37,8 @@ You have some multipliers, and bonus to help you.
 
 Let's go ! Infect them all !
 
+## Sources
+
+[sound](https://samplefocus.com/users/d-cadent/samples)
+
 
