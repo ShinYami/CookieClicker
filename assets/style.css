@@ -245,3 +245,7 @@ button {
 #End:hover {
     color: white;
 }
+
+#timing {
+    text-align: center;
+}
