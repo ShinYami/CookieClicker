@@ -49,7 +49,12 @@ function showTimer(){
      }
      return okPurchase;
  }
- 
+
+ function playSoundSample(soundTrack){
+    let audio = document.getElementById(soundTrack);
+    audio.play();
+}
+
  document.getElementById("boost").addEventListener("click",()=>{
      let currentIncrement = parseInt(document.getElementById("increment").innerHTML);
      if(!(localStorage.remainingTime>0)){
@@ -75,6 +80,7 @@ document.getElementById("start").addEventListener("click", ()=> {
 
     document.getElementById('virus').addEventListener('click', () => { 
         increaseCurrentPlayerScore();
+        playSoundSample("soundEffect");
     })
 })
 
